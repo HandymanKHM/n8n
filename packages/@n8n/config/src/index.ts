@@ -56,6 +56,10 @@ export { PersonalizationConfig } from './configs/personalization.config';
 export { NodesConfig } from './configs/nodes.config';
 export { CronLoggingConfig } from './configs/logging.config';
 
+// Export security validators and secure defaults
+export * from './validators';
+export * from './secure-defaults';
+
 const protocolSchema = z.enum(['http', 'https']);
 
 export type Protocol = z.infer<typeof protocolSchema>;
